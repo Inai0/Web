@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+ul {
+    list-style: none;
+}
+.video-bg {
+    position: fixed;
+    top : 0;
+    left: 0;
+    min-width:100%;
+    min-height: 100%;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.main-padding {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.nav {
+    position: fixed;
+    top : 0;
+    left: 0;
+    min-width:100px;
+    min-height: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    z-index: 100;
+    border-bottom: 1px solid black;
+}
+
+.nav::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100vw;
+    background: #fcfcfc;
+    z-index: -1;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-list-item{
+    font-family: 'Martel', serif;
+    border-left-style: 4px;
+    font-weight: 700;
+    font-size: 20px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.nav-list-item:hover > .nav-list_item-line{
+    width: 100%;
+}
+.nav-list-item-line{
+    background: black;
+    width: 0;
+    height: 1px;
+    transition: width 0.3s ease;
+}
+.nav-logo{
+    font-family: 'Martel', serif;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 10px;
+    font-family: "Martel",serif;
+    scroll-behavior: smooth;
+}
+.container {
+min-height: 100vh;
+}
+.hero {
+display: flex;
+align-items: center;
+justify-content: flex-end;
+flex-direction: column;
+}
+.hero-box {
+position: relative;
+}
+.hero-box-asterisk {
+font-size: 7rem;
+position: absolute;
+left: 50%;
+transform: translate(-50%, -30%);
+}
+.hero-box-img {
+width: 30rem;
+height: 45rem;
+border-top-left-radius: 50%;
+border-top-right-radius: 50%;
+overflow: hidden;
+}
+.hero-box > h1 {
+position: absolute;
+top: 30%;
+left: 50%;
+transform: translate(-50%, -30%);
+font-size: 7.5rem;
+font-weight: 6060;
+letter-spacing: 2.5rem;
+white-space: nowrap;
+}
+
+.hero-list { 
+width: 50rem; 
+display: flex; 
+justify-content: space-between; 
+margin-top: 3rem; 
+} 
+.hero-list > li { 
+font-size: 2rem; 
+letter-spacing: 0.5rem;
+font-weight: 500; 
+} 
+.hero-arrow { 
+margin-top: 5rem;
+margin-bottom: 3rem; 
+border: 1px solid #000; 
+border-radius: 50%;
+width: 6rem; 
+height: 6rem; 
+transition: transform 6.3s ease; 
+} 
+.hero-arrow:hover { 
+transform: scale(1.05); 
+}
+img {
+    width: 100%;
+    height: 100%;
+}

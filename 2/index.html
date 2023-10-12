@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Most expensive diamond in the world</title>
+</head>
+<body>
+    <h1>Most expensive diamond in the world</h1>
+    <div class="img-container">
+        <div class="img">
+            <img src="images/1.jpg" alt="">
+        </div>
+        <div class="img">
+            <img src="images/2.jpg" alt="">
+        </div>
+        <div class="img">
+            <img src="images/3.jpg" alt="">
+        </div>
+        <div class="img">
+            <img src="images/4.jpg" alt="">
+        </div>
+    </div>
+    <div class="pop-up"> 
+        <img src="images/1.jpg" alt="">
+        
+    </div>
+    <p>
+        Diamonds have been known in India since time immemorial, and the subcontinent was the only source of diamonds until 1723 when they were found in Brazil, followed by South Africa in 1870. After World War II, diamonds went on to be discovered in Russia, Botswana and Australia.    </p>
+
+    <p>
+        A diamond is a mineral made essentially of carbon in an exceptionally pure form, crystallized at extremely high temperatures and pressures. Nitrogen is the only foreign element commonly present; this may amount to as much as only 0.23 per cent. The hardest known natural substance, diamonds are composed of carbon atoms packed rigidly together to form a three-dimensional pattern, with each carbon atom tightly bonded to four further surrounding carbon atoms.    </p>
+
+    <p>
+        It is this close packing of the atoms and the regularity of the diamond’s crystal structure that is responsible for the renowned aesthetic beauty, lustre, refraction of light, transparency and extreme hardness. The atomic structure also determines the colour. Diamonds have a much higher thermal conductivity than any other gem which is why they are colder to the touch and become warmer more quickly when worn.    </p>
+    <p>
+        On October 20 the BVLGARI Blue Diamond will lead Christie’s New York Jewels sale. Part of a stunning two-stone diamond ring, designed by the legendary house of BVLGARI in the 1970s, this 10.95 carat diamond is the largest triangular-shaped fancy vivid blue ever to appear at auction. It is estimated to achieve in excess of $12 million.
+    </p>
+        <p>
+        The Perfect Pink, an extremely rare 14.23 carat fancy intense pink diamond, will lead Christie’s Hong Kong sale on November 29. In over 244 years of auction history, only 18 diamonds over 10 carats showing a distinct pure pink colour have appeared for sale and not one was graded a fancy intense pink at the time, placing this extraordinary diamond in a class completely of its own. It is estimated to achieve US$14-19 million.
+    </p>
+    <header>
+        <a href="#" class ="logo">LOGO</a>
+    <nav>   
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us &bigtriangledown;</a>
+                <ul>
+                    <li><a href="#">Phone Contacts</a></li>
+                    <li><a href="#">Email</a></li>
+                    <li><a href="#">Our address</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contacts</a></li>
+            <li><a hred="#">Services</a></li>
+        </ul>
+    </nav>
+</header>
+    
+    <!-- Текстовий вміст -->
+    <p>
+        
+    </p>
+
+    <!-- Зображення -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        document.querySelectorAll('.img-container img').forEach(img => {
+            img.onclick = function() {
+                document.querySelector('.pop-up').style.display = 'block';
+                document.querySelector('.pop-up img').src = img.getAttribute('src');
+                
+            };
+        });
+    </script>
+    <script>$(document).mouseup(function (e) {
+        var container = $(".pop-up"); // Замените на ваш селектор
+        if (container.has(e.target).length === 0){
+            container.hide();
+        }
+    });
+    </script>
+    
+</body>
+</html>
